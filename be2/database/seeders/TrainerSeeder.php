@@ -16,12 +16,11 @@ class TrainerSeeder extends Seeder
      */
     public function run()
     {
-        for ($i=0; $i < 50; $i++){
-            DB::table('trainers')->insert([          
-            'trainer_name' => 'Triet',
-            'company_id' => 111,
-            'trainer_email' => Str::random(20),
-            'trainer_phone' => '11111111',
+        $limit = 10;
+
+        for ($i = 0; $i < $limit; $i++){
+            DB::table('trainers')->insert([
+                'company_id' => $i+1,
             ]);
         }
     }

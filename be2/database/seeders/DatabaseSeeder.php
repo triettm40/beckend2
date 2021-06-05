@@ -16,7 +16,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TrainerSeeder::class,
             CompaniesSeeder::class,
-            Categories::class
+            Categories::class,
+            User::class,
+            Permission::class,
+            group_has_permission::class,
+            user_has_permission::class,
+            user_has_group::class,
+            Group::class,
+            seedCompany_has_category::class
         ]);
     }
 }
