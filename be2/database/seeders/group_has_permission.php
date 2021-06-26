@@ -1,9 +1,11 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Seeder;
 
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 class group_has_permission extends Seeder
 {
     /**
@@ -13,6 +15,7 @@ class group_has_permission extends Seeder
      */
     public function run()
     {
+        //
         for ($i=0; $i < 50; $i++){
             DB::table('group_has_permission')->insert([          
             'group_id' => $i+1,

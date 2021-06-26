@@ -1,9 +1,11 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Seeder;
 
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 class group extends Seeder
 {
     /**
@@ -18,5 +20,6 @@ class group extends Seeder
             'group_name' => 'triet',
             ]);
         }
+
     }
 }

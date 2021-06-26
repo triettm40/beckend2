@@ -1,8 +1,11 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Illuminate\Database\Migrations;
 
 class Semester extends Seeder
 {
@@ -19,5 +22,6 @@ class Semester extends Seeder
                 
             ]);
         }
+       
     }
 }

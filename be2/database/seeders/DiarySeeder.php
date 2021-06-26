@@ -1,8 +1,10 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class DiarySeeder extends Seeder
 {
@@ -23,5 +25,6 @@ class DiarySeeder extends Seeder
                 'diary_week_id' =>  rand(1, 7),
             ]);
     }
+
     }
 }

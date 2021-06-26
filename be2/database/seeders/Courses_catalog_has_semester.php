@@ -1,8 +1,11 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Illuminate\Database\Migrations;
 
 class Courses_catalog_has_semester extends Seeder
 {
@@ -13,6 +16,8 @@ class Courses_catalog_has_semester extends Seeder
      */
     public function run()
     {
+        $limit = 20;
+
         for ($i=0; $i < 10; $i++){ 
             DB::table('courses_catalog_has_semester')->insert([
                 
@@ -20,5 +25,6 @@ class Courses_catalog_has_semester extends Seeder
                 'semester_id'  => rand(1,10),
             ]);
         }
+       
     }
 }

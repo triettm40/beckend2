@@ -1,9 +1,10 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Seeder;
 
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 class StudentSeeder extends Seeder
 {
     /**
@@ -27,3 +28,5 @@ class StudentSeeder extends Seeder
         }
     }
 }
+
+

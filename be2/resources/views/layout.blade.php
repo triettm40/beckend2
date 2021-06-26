@@ -1,13 +1,14 @@
 <html>
     <head>
         <title>App Name - @yield('title')</title>
-        @include('page');
+        @include('meta')
     </head>
     <body>
-    @include('header');
+       @include('header')
+
         <div class="container">
             @yield('content')
         </div>
-        @include('footer');
+        @include('footer')
     </body>
 </html>
